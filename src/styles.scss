@@ -1,2 +1,4 @@
-@import './assets/reset.scss';
-@import './assets/layout.scss';
+@use './assets/reset.scss';
+@use './assets/layout.scss';
+
+@use "tailwindcss";
