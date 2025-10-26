@@ -91,6 +91,32 @@
           }
         }
       }
+    },
+    "maniUiKit": {
+      "projectType": "library",
+      "root": "projects/mani-ui-kit",
+      "sourceRoot": "projects/mani-ui-kit/src",
+      "prefix": "lib",
+      "architect": {
+        "build": {
+          "builder": "@angular/build:ng-packagr",
+          "configurations": {
+            "production": {
+              "tsConfig": "projects/mani-ui-kit/tsconfig.lib.prod.json"
+            },
+            "development": {
+              "tsConfig": "projects/mani-ui-kit/tsconfig.lib.json"
+            }
+          },
+          "defaultConfiguration": "production"
+        },
+        "test": {
+          "builder": "@angular/build:karma",
+          "options": {
+            "tsConfig": "projects/mani-ui-kit/tsconfig.spec.json"
+          }
+        }
+      }
     }
   }
 }
